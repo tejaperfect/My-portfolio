@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="space_bg.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animated-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Using Canvas 2D API for interactive universe background -->
+    <script src="universe_background.js"></script>
+    <script src="content-animations.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="bg-canvas"></canvas>
+        <header>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home" class="section">
+            <div class="content">
+                <div class="content-container light-overlay">
+                    <div class="reveal-content">
+                        <h1>Hello, I'm <span class="highlight glow-text">Auti Tejas</span></h1>
+                    </div>
+                    <div class="reveal-content" style="transition-delay: 0.3s;">
+                        <h2>I'm a <span class="typewriter"></span></h2>
+                    </div>
+                    <div class="reveal-content" style="transition-delay: 0.6s;">
+                        <p class="float text-emphasize">Welcome to my interactive portfolio universe</p>
+                    </div>
+                    <div class="cta-buttons reveal-content" style="transition-delay: 0.9s;">
+                        <a href="#projects" class="btn primary animated">View Projects</a>
+                        <a href="#contact" class="btn secondary animated">Contact Me</a>
+                    </div>
+
+                    <!-- Add the social icons here -->
+                    <div class="social-icons-container reveal-content" style="transition-delay: 1.2s;">
+                        <a href="https://github.com/tejaperfect" target="_blank" class="social-icon-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="www.linkedin.com/in/tejas-auti-763635201" target="_blank" class="social-icon-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tejaa__.17?igsh=cHR1YTFhcHZmc2d0" target="_blank" class="social-icon-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://dribbble.com/" target="_blank" class="social-icon-link dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                 <!-- Floating elements for visual interest -->
+                <div class="floating-icons">
+                    <div class="floating-icon float">
+                        <i class="icon-code">&#60;/&#62;</i>
+                        <p>web developer</p>
+                    </div>
+                    <div class="floating-icon float-delay-1">
+                        <i class="icon-design">&#9635;</i>
+                        <p>app developer</p>
+                        <p>Entrepreneur</p>
+                    </div>
+                    <div class="floating-icon float-delay-2">
+                        <i class="icon-creative">&#9733;</i>
+                        <p>ui/ux designer</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="content">
+                <h2 class="section-title">About Me</h2>
+                <div class="content-container light-overlay">
+                <div class="about-content">
+                    <div class="about-text reveal-content">
+                        <p>Hello! I'm a <span class="highlight">passionate developer</span> with expertise in creating beautiful and functional websites. I love bringing ideas to life through code and design.</p>
+                        <p>I specialize in web development, focusing on creating <span class="highlight">responsive and user-friendly interfaces</span> that provide a great user experience across all devices.</p>
+                        <p class="text-emphasize">When I'm not coding, you can find me exploring new technologies, reading, or enjoying outdoor activities.</p>
+                        
+                        <!-- Timeline of experience -->
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content enhanced-card">
+                                    <h3>2022 - 2025</h3>
+                                    <h4>bsc(Computer Science) </h4>
+                                    <p>completed graduation in samarth collage of computer science belhe</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content enhanced-card">
+                                    <h3>2021 - 2022</h3>
+                                    <h4>HSC</h4>
+                                    <p>Dnyanmadir Highschool and junior collage ale,pune</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content enhanced-card">
+                                    <h3>2019 - 2020</h3>
+                                    <h4>scc </h4>
+                                    <p>dyanda madhyamic vidyalay mangrul,pune</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <!-- Corner accents -->
+                            <div class="corner corner-tl"></div>
+                            <div class="corner corner-tr"></div>
+                            <div class="corner corner-bl"></div>
+                            <div class="corner corner-br"></div>
+                            <!-- Shine effect -->
+                            <div class="shine"></div>
+                            <!-- Image or placeholder text -->
+                            <div class="placeholder-content"><img src="./tejas-pic.jpg" alt="tejas"></div>
+                        </div>
+                        
+                        <!-- Social links with animated icons -->
+                        <div class="social-icons">
+                            <a href="https://github.com/tejaperfect" class="social-icon">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="www.linkedin.com/in/tejas-auti-763635201" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="content">
+                <h2 class="section-title">My Projects</h2>
+                
+                <div class="content-container light-overlay">
+                <!-- Project category filter -->
+                <div class="project-filter reveal-content">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card enhanced-card tilt-effect" data-category="web">
+                        <div class="project-image image-effect">
+                            <div class="image-placeholder"><img src="./image.png" alt=""></div>
+                            <div class="overlay">
+                                <button class="btn animated">View Details</button>
+                            </div>
+                        </div>
+                        <h3 class="glow-text">Expensiver WebApp</h3>
+                        <div class="project-tags">
+                            <span class="tag">html</span>
+                            <span class="tag">css</span>
+                            <span class="tag">javascript</span>
+                        </div>
+                        <p>A dynamic dashboard with real-time data visualization and user analytics. Includes customizable widgets and responsive design.</p>
+                        <div class="project-links">
+                            <a href=" https://tejaperfect.github.io/expensiver/" class="btn small animated">Demo</a>
+                            <a href="https://github.com/tejaperfect/expensiver" class="btn small animated">Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card enhanced-card tilt-effect" data-category="mobile">
+                        <div class="project-image image-effect">
+                            <div class="image-placeholder">Project 2 Image</div>
+                            <div class="overlay">
+                                <button class="btn animated">View Details</button>
+                            </div>
+                        </div>
+                        <h3 class="glow-text">Fitness Tracker App</h3>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                        <p>A mobile application that helps users track workouts, set goals, and monitor progress. Features include personalized workout plans and nutrition tracking.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn small animated">Demo</a>
+                            <a href="#" class="btn small animated">Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card enhanced-card tilt-effect" data-category="design">
+                        <div class="project-image image-effect">
+                            <div class="image-placeholder">Project 3 Image</div>
+                            <div class="overlay">
+                                <button class="btn animated">View Details</button>
+                            </div>
+                        </div>
+                        <h3 class="glow-text">E-commerce Redesign</h3>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <p>Complete redesign of an e-commerce platform focusing on user experience, conversion optimization, and accessibility. Includes user research and testing.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn small animated">Demo</a>
+                            <a href="#" class="btn small animated">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View more projects button -->
+                <div class="view-more">
+                    <a href="#" class="btn primary animated">View All Projects</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="content">
+                <h2 class="section-title">My Skills</h2>
+                
+                <div class="content-container light-overlay">
+                <!-- Animated skill meter cards -->
+                <div class="skills-container">
+                    <div class="skill-category enhanced-card glow-border">
+                        <h3 class="glow-text">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">HTML</div>
+                                    <div class="skill-percent">95%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="HTML"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">CSS</div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="CSS"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">JavaScript</div>
+                                    <div class="skill-percent">60%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="JavaScript"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">React</div>
+                                    <div class="skill-percent">10%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="React"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category enhanced-card glow-border">
+                        <h3 class="glow-text">Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">Node.js</div>
+                                    <div class="skill-percent">10%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="Node.js"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">Express</div>
+                                    <div class="skill-percent">10%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="Express"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">MongoDB</div>
+                                    <div class="skill-percent">65%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="MongoDB"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category enhanced-card glow-border">
+                        <h3 class="glow-text">Tools & Other</h3>
+                        <div class="skills-list">
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">Git</div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="Git"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-wrapper">
+                                <div class="skill-header">
+                                    <div class="skill-name">Figma</div>
+                                    <div class="skill-percent">70%</div>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-skill="Figma"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive skill cloud -->
+                <div class="skill-cloud reveal-content">
+                    <div class="cloud-title">Additional Skills</div>
+                    <div class="cloud-items">
+                        <span class="cloud-item float">app development</span>
+                        <span class="cloud-item float-delay-1">Redux</span>
+                        <span class="cloud-item float-delay-2">GraphQL</span>
+                        <span class="cloud-item float">Sass</span>
+                        <span class="cloud-item float-delay-1">UI/UX Design</span>
+                        <span class="cloud-item float-delay-2">Firebase</span>
+                        <span class="cloud-item float">github</span>
+                        <span class="cloud-item float-delay-1">Docker</span>
+                        <span class="cloud-item float-delay-2">AWS</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="content-container light-overlay">
+                <div class="contact-container">
+                    <div class="contact-info enhanced-card glow-border">
+                        <h3 class="contact-heading glow-text">Get In Touch</h3>
+                        <p class="contact-intro">Feel free to reach out for collaborations, questions, or just to say hi!</p>
+                        
+                        <div class="contact-item float">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:tejasauti17@gmail.com" class="animated-link">tejasauti17@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item float-delay-1">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+918010095340" class="animated-link">call ..</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item float-delay-2">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>pune, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="availability">
+                            <h4>Availability</h4>
+                            <div class="availability-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Available for freelance projects</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/tejaperfect" class="social-link animated-link">
+                                <i class="social-icon">GitHub</i>
+                            </a>
+                            <a href="www.linkedin.com/in/tejas-auti-763635201" class="social-link animated-link">
+                                <i class="social-icon">LinkedIn</i>
+                            </a>
+                            <a href="#" class="social-link animated-link">
+                                <i class="social-icon">Twitter</i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form enhanced-card glow-border reveal-content">
+                        <h3 class="form-heading glow-text">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="enhanced-input" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="enhanced-input" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="enhanced-input" placeholder="What is this about?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" class="enhanced-input" placeholder="Your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary animated">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div class="faq-section reveal-content">
+                    <h3 class="faq-heading">Frequently Asked Questions</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item enhanced-card">
+                            <h4 class="faq-question">What services do you offer?</h4>
+                            <p class="faq-answer">I offer web development, UI/UX design, and mobile app development services with a focus on responsive, user-friendly solutions.</p>
+                        </div>
+                        <div class="faq-item enhanced-card">
+                            <h4 class="faq-question">What is your typical project timeline?</h4>
+                            <p class="faq-answer">Project timelines vary based on complexity, but most projects take 4-8 weeks from concept to completion.</p>
+                        </div>
+                        <div class="faq-item enhanced-card">
+                            <h4 class="faq-question">Do you offer maintenance services?</h4>
+                            <p class="faq-answer">Yes, I provide ongoing maintenance and support to ensure your project continues to run smoothly after launch.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Tejas Auti. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-links li');
+            const header = document.querySelector('header');
+            
+            // Toggle mobile menu
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking a link
+            navLinksItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Typewriter effect
+            const typewriterElement = document.querySelector('.typewriter');
+            if (typewriterElement) {
+                const phrases = [
+                    'Web Developer',
+                    'UI/UX Designer',
+                    'Creative Coder',
+                    'Problem Solver'
+                ];
+                
+                let phraseIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+                let typingSpeed = 100;
+                
+                function typeEffect() {
+                    const currentPhrase = phrases[phraseIndex];
+                    
+                    if (isDeleting) {
+                        // Deleting text
+                        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                        charIndex--;
+                        typingSpeed = 50; // Faster when deleting
+                    } else {
+                        // Typing text
+                        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                        charIndex++;
+                        typingSpeed = 100; // Normal speed when typing
+                    }
+                    
+                    // Handle phrase completion or deletion
+                    if (!isDeleting && charIndex === currentPhrase.length) {
+                        // Completed typing current phrase
+                        isDeleting = true;
+                        typingSpeed = 1000; // Pause at the end of phrase
+                    } else if (isDeleting && charIndex === 0) {
+                        // Completed deleting current phrase
+                        isDeleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
+                        typingSpeed = 500; // Pause before starting new phrase
+                    }
+                    
+                    setTimeout(typeEffect, typingSpeed);
+                }
+                
+                // Start the typewriter effect
+                setTimeout(typeEffect, 1000);
+            }
+            
+            // Form submission
+            const contactForm = document.querySelector('.contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Simple validation
+                    if (name && email && message) {
+                        // In a real application, you would send this data to a server
+                        alert('Thank you for your message! I will get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        alert('Please fill in all fields.');
+                    }
+                });
+            }
+            
+            // Add animation classes on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            // Function to check if element is in viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.75 &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            // Add fade-in class when section is in viewport
+            function checkSections() {
+                sections.forEach(section => {
+                    if (isInViewport(section) && !section.classList.contains('fade-in')) {
+                        section.classList.add('fade-in');
+                        
+                        // Add staggered animation to children
+                        const children = section.querySelectorAll('.content > *');
+                        children.forEach((child, index) => {
+                            if (index === 0) {
+                                child.classList.add('fade-in');
+                            } else if (index === 1) {
+                                child.classList.add('fade-in-delay-1');
+                            } else {
+                                child.classList.add('fade-in-delay-2');
+                            }
+                        });
+                    }
+                });
+            }
+            
+            // Check sections on scroll and on page load
+            window.addEventListener('scroll', checkSections);
+            window.addEventListener('load', checkSections);
+        });
+    </script>
+</body>
+</html>
